@@ -30,11 +30,10 @@ include 'connect.php'
                echo "<option value='$singlerole[ID]'>$singlerole[roleName]</option>";
            }?>
            </select>
-
-
         <button type="submit" >Save</button>
-
     </form>
+
+    
  
 </body>
 </html>
