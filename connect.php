@@ -1,12 +1,17 @@
 <?php
-$dbName = "register";
-$dbHost = "localhost";
-$dbUser = "root";
-$dbPass = "";
 
-$conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
+$db_user="root";
+$db_server="localhost";
+$db_pass="";
+$db_name="form";
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=form", "root", "");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
+
+
 
