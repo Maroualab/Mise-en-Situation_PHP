@@ -7,21 +7,22 @@
 </head>
 <body>
 
-<form action="sendDataToDB.php" method="POST">
+<form action="./sendDataToDB.php" method="POST">
   
 
-    <label for="name">Nom du Titulaire:</label>
+    <label for="name">name</label>
     <input type="text" id="name" name="name" required><br><br>
 
-    <label for="email">Email</label>
-    <input type="email"id="email" name="email" required><br><br>
+    <label for="logo">logo</label>
+    <input type="text"id="logo" name="logo" required><br><br>
 
 
-    <label for="password">password</label>
-    <input type="password" id="password" name="password" required><br><br>
+    <label for="description">description</label>
+    <input type="text" id="description" name="description" required><br><br>
 
+   
 
-    <input type="submit" name="submit" value="Ajouter">
+    <input type="submit" name="submit" value="save">
 </form>
 
 

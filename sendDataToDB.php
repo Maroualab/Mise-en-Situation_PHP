@@ -7,12 +7,13 @@ if(isset($_POST['submit'])){
 
 
     $name=$_POST['name'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
+    $logo=$_POST['logo'];
+    $desc=$_POST['desc'];
+  
+    $form =new FormClass($name,$logo,$desc);
+    $form -> getData();
 
-    $form = new FormClass($name,$email,$password);
+   print_r($form);
 
-    
-    
 }
 
